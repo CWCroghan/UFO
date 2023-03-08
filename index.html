@@ -14,15 +14,17 @@
     />
 <link rel="stylesheet" href="static/css/style.css">    
 <body>
+    <body class="bg-dark"></body>
+    
     <div class="wrapper">
-        <nav class="navbar navbar-expand-lg">
-            <a class="navbar-brand" href="index.html">UFO Sightings</a>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+             <a class="navbar-brand" href="index.html">UFO Sightings</a>
         </nav> 
 
     </div>
 
     <div class="jumbotron">
-        <h1>The Truth Is Out There</h1>
+        <h1 class="display-4">The Truth Is Out There</h1>
     </div>
 
     <div class="container-fluid">
@@ -44,18 +46,18 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-3">
-                <form>
+                <form class="bg-dark">
                     <p>Filter Search</p>
+                    <ul class="list-group bg-dark">
+                        <li class="list-group-item bg-dark">
+                            <label for="date">Enter Date</label>
+                        </li>
+                        <li class="list-group-item bg-dark">
+                            <input type="text" placeholder="1/10/2010" id="datetime" />
+                        </li>
+                        <button id="filter-btn" type="button" class="btn btn-default">Filter Table</button>
+                    </ul>
                 </form>
-                <ul class="list-group">
-                    <li class="list-group-item">
-                        <label for="date">Enter Date</label>
-                    </li>
-                    <li class="list-group-item">
-                        <input type="text" placeholder="1/10/2010" id="datetime" />
-                    </li>
-                    <button id="filter-btn" type="button" class="btn btn-default">Filter Table</button>
-                </ul>
             </div>
             <div class="col-md-9">
                 <table class="table table-striped">
