@@ -21,6 +21,7 @@ function buildTable(data) {
 };
 
 function handleClick() {
+    console.log("Clicked")
     let date = d3.select('#datetime').property('value');
     let filteredData = tableData;
 
